@@ -24,9 +24,12 @@ This research project explores the **ethical, legal, and privacy challenges** of
 ## ✅ My Contribution
 
 I contributed to:
-- [Replace this with your real contributions, e.g., Clearview AI case study, policy recommendations]
-- Slide creation and presentation delivery
-- Reviewing and editing sections for clarity
+
+- Writing the **policy recommendations and strategic insights** for the Clearview AI and Aadhaar case studies, which were originally researched and analyzed by another group member.
+- Writing the **conclusion section** of the report, synthesizing insights from both case studies to highlight the ethical, legal, and technical challenges of biometric authentication systems.
+- Ensuring consistency in messaging and language around key themes like **consent, transparency, and equitable access**.
+
+Through this work, I gained a deeper understanding of how biometric systems, if not properly regulated, can undermine privacy rights and lead to long-term harm. Our group collaborated effectively by dividing sections early, sharing drafts and slide decks over group chat, and checking in regularly to keep each member aligned and accountable.
 
 ---
 
