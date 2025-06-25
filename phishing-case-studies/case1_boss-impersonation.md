@@ -43,3 +43,19 @@ In February 2025, I received a suspicious email impersonating to be from my form
 ## 6. Notes
 
 No links or attachments were included in this attempt. The attacker likely intended to continue the conversation on WhatsApp, where they could escalate the social engineering (e.g., request gift cards or confidential information).
+
+## 7. Reporting & Action Taken
+
+As part of my role as an **Incident Response Analyst** at CyberSecurity Sensei, I forwarded this phishing email to the **Anti-Phishing Working Group (APWG)** at:
+
+📧 `ReportPhishing@apwg.org`
+
+> According to CyberSecurity Sensei:  
+> _"All these companies/organizations have asked us to report fraud and other suspected malicious messages. For many, their reputations are at stake, so they absolutely **do want to know** when crooks try to impersonate them, so they can put a stop to it.  
+> Don't just delete those malicious emails. If you're too busy to report them, forward them to us and we'll do it on your behalf!"_  
+> — CyberSecurity Sensei Incident Response Team
+
+This helps threat intelligence teams track campaigns and protect future victims.
+
+I forwarded the phishing email **as an attachment** to preserve full headers and metadata.
+
