@@ -14,6 +14,8 @@ The message pretended to share a document labeled as a salary update, exploiting
 - **Tag:** `[△EXTERNAL]` warning was shown by the mail server.
 - **Link Label:** “This link will work for anyone” — unusual for sensitive files.
 
+![Phishing Email Screenshot](images/case2_salary-increase-phish.png)
+
 ## 3. Indicators of Compromise (IOCs)
 
 | IOC Type              | Value                                                      |
