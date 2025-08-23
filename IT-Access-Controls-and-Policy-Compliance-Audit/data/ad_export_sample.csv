@@ -1,0 +1,7 @@
+username,dept,last_login,role,group,mfa_status
+jdoe,IT,2024-06-15,Domain Admin,Admins,Enabled
+asmith,HR,2023-12-10,User,HR_Users,Disabled
+bjones,Intern,2024-02-20,Domain Admin,Admins,Disabled
+cmiller,Finance,2024-07-12,Finance Manager,Finance_Team,Enabled
+awilson,IT,2023-11-02,System Admin,Admins,Disabled
+kpatel,Intern,2025-01-15,User,IT_Interns,Disabled
