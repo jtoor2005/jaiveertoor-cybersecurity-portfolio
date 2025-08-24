@@ -1,6 +1,6 @@
 # 🛡️ Active Directory Policy Violation Analyzer
 
-*Automated Active Directory policy audit tool that detects dormant accounts, missing MFA, and access violations, producing compliance reports and charts.*
+*Automated AD audit tool that detects dormant accounts, missing MFA, and access violations, producing compliance reports and charts.*
 
 ---
 
@@ -16,7 +16,7 @@ It detects risky accounts and policy violations, then generates a compliance rep
 ## 🚀 Features
 - Detects **Dormant Accounts** (no login > 90 days)  
 - Flags **Admins Without MFA**  
-- Enforces **Departmental Policies**  
+- Enforces **Departmental Policies**:  
   - Interns cannot have admin rights  
   - Non-IT users should not have admin roles  
   - Managers must have MFA enabled  
@@ -26,16 +26,9 @@ It detects risky accounts and policy violations, then generates a compliance rep
 ## 📂 Project Structure
 
 
-📊 Sample Output
 
-Violations Report (CSV)
 
-| username | violation\_type              | details                                | risk\_level |
-| -------- | ---------------------------- | -------------------------------------- | ----------- |
-| jdoe     | Dormant account              | Last login 2024-06-15 (\~434 days ago) | Medium      |
-| bjones   | Admin without MFA            | Role='Domain Admin', MFA='Disabled'    | High        |
-| bjones   | Dept policy: Intern w/ admin | Dept=Intern, Role=Domain Admin         | High        |
-| awilson  | Admin without MFA            | Role='System Admin', MFA='Disabled'    | High        |
+---
 
 ## ⚡ How to Run
 
@@ -46,31 +39,61 @@ Follow these steps to run the analyzer on your own machine:
 git clone https://github.com/jtoor2005/jaiveertoor-cybersecurity-portfolio.git
 cd jaiveertoor-cybersecurity-portfolio/IT-Access-Controls-and-Policy-Compliance-Audit
 
+### 2. Set Up a Virtual Environment (Recommended)
+
+python -m venv .venv
+.\.venv\Scripts\activate    # On Windows
+# source .venv/bin/activate # On Mac/Linux
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+
+### 4. Run the Analyzer
+
+python -m src.main
+
+### 5. View Results
+
+      - 📄 CSV Report: reports/violations_report.csv → Contains all detected violations
+      - 📊 Chart: reports/summary_visualization.png → Bar chart of violation types
+
+### 📊 Sample Output
+
+# Violations Report (CSV)
+
+| username | violation\_type              | details                                | risk\_level |
+| -------- | ---------------------------- | -------------------------------------- | ----------- |
+| jdoe     | Dormant account              | Last login 2024-06-15 (\~434 days ago) | Medium      |
+| bjones   | Admin without MFA            | Role='Domain Admin', MFA='Disabled'    | High        |
+| bjones   | Dept policy: Intern w/ admin | Dept=Intern, Role=Domain Admin         | High        |
+| awilson  | Admin without MFA            | Role='System Admin', MFA='Disabled'    | High        |
 
 Visualization (Bar Chart)
 
 🛠 Skills Demonstrated
 
-   - Python (automation & scripting)
+     - Python (automation & scripting)
 
-   - pandas (data analysis & CSV processing)
+     - pandas (data analysis & CSV processing)
 
-   - matplotlib (data visualization)
+     - matplotlib (data visualization)
 
-   - Identity & Access Management (IAM)
+     - Identity & Access Management (IAM)
 
-   - Governance, Risk, and Compliance (GRC)
+     - Governance, Risk, and Compliance (GRC)
 
-   - IT Audit / Access Review
+     - IT Audit / Access Review
 
-   - Security Automation
+     - Security Automation
 
-   - Active Directory (simulated)
+     - Active Directory (simulated)
 
-## 📄 Resume Highlights
-- Built a **Python-based internal tool** to analyze mock Active Directory user exports for policy violations.  
-- Automated detection of **dormant accounts, excessive privileges, missing MFA, and departmental access risks**.  
-- Generated **risk classification reports** and visualizations to simulate enterprise IT audit procedures.  
+### 📄 Resume Highlights
 
+     - Built a Python-based internal tool to analyze mock Active Directory user exports for policy violations.
 
+     - Automated detection of dormant accounts, excessive privileges, missing MFA, and departmental access risks.
 
+     - Generated risk classification reports and visualizations to simulate enterprise IT audit procedures.
