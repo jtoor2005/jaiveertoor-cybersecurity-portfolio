@@ -37,6 +37,15 @@ Violations Report (CSV)
 | bjones   | Dept policy: Intern w/ admin | Dept=Intern, Role=Domain Admin         | High        |
 | awilson  | Admin without MFA            | Role='System Admin', MFA='Disabled'    | High        |
 
+## ⚡ How to Run
+
+Follow these steps to run the analyzer on your own machine:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/jtoor2005/jaiveertoor-cybersecurity-portfolio.git
+cd jaiveertoor-cybersecurity-portfolio/IT-Access-Controls-and-Policy-Compliance-Audit
+
 
 Visualization (Bar Chart)
 
@@ -57,6 +66,11 @@ Visualization (Bar Chart)
    - Security Automation
 
    - Active Directory (simulated)
+
+## 📄 Resume Highlights
+- Built a **Python-based internal tool** to analyze mock Active Directory user exports for policy violations.  
+- Automated detection of **dormant accounts, excessive privileges, missing MFA, and departmental access risks**.  
+- Generated **risk classification reports** and visualizations to simulate enterprise IT audit procedures.  
 
 
 
