@@ -1,48 +1,49 @@
-# 🛡️ Active Directory Policy Violation Analyzer
+🛡️ Active Directory Policy Violation Analyzer
+Automated Active Directory policy audit tool that detects dormant accounts, missing MFA, and access violations, producing compliance reports and charts.
 
-## 📌 Overview
-This project simulates an **internal IT audit tool** for analyzing Active Directory (AD) user exports.  
-It detects risky accounts and policy violations, then generates a compliance report and visualization.  
+📌 Overview
+This project simulates an internal IT audit tool for analyzing Active Directory (AD) user exports.
+It detects risky accounts and policy violations, then generates a compliance report and visualization.
 
-🔧 **Built with:** Python, pandas, matplotlib  
-📊 **Output:** CSV report + bar chart of violations  
+🔧 Built with: Python, pandas, matplotlib
+📊 Output: CSV report + bar chart of violations
 
----
+🚀 Features
+Detects Dormant Accounts (no login > 90 days)
 
-## 🚀 Features
-- Detects **Dormant Accounts** (no login > 90 days)  
-- Flags **Admins Without MFA**  
-- Enforces **Departmental Policies**  
-  - Interns cannot have admin rights  
-  - Non-IT users should not have admin roles  
-  - Managers must have MFA enabled  
+Flags Admins Without MFA
 
----
+Enforces Departmental Policies
 
-## 📂 Project Structure
+Interns cannot have admin rights
+
+Non-IT users should not have admin roles
+
+Managers must have MFA enabled
+
+📂 Project Structure
 
 IT-Access-Controls-and-Policy-Compliance-Audit/
 │── data/
-│ └── ad_export_sample.csv # Mock AD export
+│   └── ad_export_sample.csv        # Mock AD export
 │── src/
-│ ├── main.py # Entry point
-│ ├── utils.py # Helpers (CSV, dates, output)
-│ ├── detect_dormant.py # Dormant accounts
-│ ├── detect_admin_no_mfa.py # Admins without MFA
-│ └── detect_policy_violations.py # Department rules
+│   ├── main.py                     # Entry point
+│   ├── utils.py                    # Helpers (CSV, dates, output)
+│   ├── detect_dormant.py           # Dormant accounts
+│   ├── detect_admin_no_mfa.py      # Admins without MFA
+│   └── detect_policy_violations.py # Department rules
 │── reports/
-│ ├── violations_report.csv # Generated violations
-│ └── summary_visualization.png # Violation summary chart
+│   ├── violations_report.csv       # Generated violations
+│   └── summary_visualization.png   # Violation summary chart
 │── requirements.txt
 │── README.md
 
 
-## ⚡ How to Run
-
+⚡ How to Run
 Follow these steps to run the analyzer on your own machine:
 
-### 1. Clone the Repository
-```bash
+1. Clone the Repository
+
 git clone https://github.com/jtoor2005/jaiveertoor-cybersecurity-portfolio.git
 cd jaiveertoor-cybersecurity-portfolio/IT-Access-Controls-and-Policy-Compliance-Audit
 
@@ -62,7 +63,6 @@ python -m src.main
 
 5. View Results
 📄 CSV Report: reports/violations_report.csv → Contains all detected violations
-
 📊 Chart: reports/summary_visualization.png → Bar chart of violation types
 
 📊 Sample Output
@@ -76,20 +76,26 @@ Violations Report (CSV)
 | bjones   | Dept policy: Intern w/ admin | Dept=Intern, Role=Domain Admin         | High        |
 | awilson  | Admin without MFA            | Role='System Admin', MFA='Disabled'    | High        |
 
+
+Visualization (Bar Chart)
+
 🛠 Skills Demonstrated
-Python (automation & scripting)
 
-pandas (data analysis & CSV processing)
+   - Python (automation & scripting)
 
-matplotlib (data visualization)
+   - pandas (data analysis & CSV processing)
 
-Identity & Access Management (IAM)
+   - matplotlib (data visualization)
 
-Governance, Risk, and Compliance (GRC)
+   - Identity & Access Management (IAM)
 
-IT Audit / Access Review
+   - Governance, Risk, and Compliance (GRC)
 
-Security Automation
+   - IT Audit / Access Review
 
-Active Directory (simulated)
+   - Security Automation
+
+   - Active Directory (simulated)
+
+
 
