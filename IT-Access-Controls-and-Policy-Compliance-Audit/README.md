@@ -25,7 +25,20 @@ It detects risky accounts and policy violations, then generates a compliance rep
 
 ## 📂 Project Structure
 
-
+IT-Access-Controls-and-Policy-Compliance-Audit/
+│── data/
+│ └── ad_export_sample.csv # Mock AD export
+│── src/
+│ ├── main.py # Entry point
+│ ├── utils.py # Helpers (CSV, dates, output)
+│ ├── detect_dormant.py # Dormant accounts
+│ ├── detect_admin_no_mfa.py # Admins without MFA
+│ └── detect_policy_violations.py # Department rules
+│── reports/
+│ ├── violations_report.csv # Generated violations
+│ └── summary_visualization.png # Violation summary chart
+│── requirements.txt
+│── README.md
 
 
 ---
