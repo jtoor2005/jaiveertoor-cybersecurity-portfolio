@@ -110,3 +110,11 @@ Visualization (Bar Chart)
      - Automated detection of dormant accounts, excessive privileges, missing MFA, and departmental access risks.
 
      - Generated risk classification reports and visualizations to simulate enterprise IT audit procedures.
+
+
+> **Note on commit history**
+>
+> This project was renamed on Aug 24, 2025 from **IT-Access-Controls-and-Policy-Compliance-Audit** → **Active-Directory-Policy-Violation-Analyzer**.
+> GitHub’s “History” for this folder shows only commits to the new path.  
+> • **All commits for the whole repo:** https://github.com/jtoor2005/jaiveertoor-cybersecurity-portfolio/commits/main  
+> • **Pre-rename folder history:** https://github.com/jtoor2005/jaiveertoor-cybersecurity-portfolio/commits/main/IT-Access-Controls-and-Policy-Compliance-Audit
